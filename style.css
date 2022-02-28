@@ -332,4 +332,97 @@ footer a {
   text-align: end;
 }
 
+/* Media queries */
 
+
+/*
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+ 
+  /* CSS */
+ 
+}
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+@media (min-width: 481px) and (max-width: 767px) {
+ 
+  /* CSS */
+ 
+}
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px) {
+  .logo {
+    width: 400px;
+    justify-content: center;
+  }
+  
+  .header-on-bg {
+    flex-direction: column;
+  }
+  .navbar a:nth-child(1) {
+    display: none;
+  }
+  .navbar a:nth-child(2) {
+    display: none;
+  }
+  .navbar a:nth-child(3) {
+    display: none;
+  }
+  .navbar i {
+    font-size: 3rem;
+    color: black;
+    margin-bottom: 40px;
+  }
+  .navbar i:hover,
+  .navbar i:active {
+    color: #3B5194;
+  }
+
+  .head-title {
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  .story-wrapper {
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+  .story-text h2, h3 {
+    text-align: center;
+  }
+  .two-pics {
+    margin-top: 40px;
+  }
+
+  .panels {
+    flex-direction: column;
+  }
+  .panel {
+    min-height: 200px;
+  }
+  .panel > * {
+    display: none;
+  }
+  .customers-section h2 {
+    font-size: 4rem;
+    margin-bottom: 30px;
+  }
+  .customers-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .copy {
+    font-size: 10px;
+  }
+  
+
+
+
+}
